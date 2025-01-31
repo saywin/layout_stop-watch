@@ -1,0 +1,536 @@
+.stopwatch {
+  border: 1vmin dotted #000;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 80vmin;
+  height: 80vmin;
+  display: flex;
+}
+
+@keyframes rotate-hand-clock {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.stopwatch__minute {
+  transform-origin: bottom;
+  background-color: #0700ff;
+  width: 3vmin;
+  height: 20vmin;
+  animation: 3600s steps(60, end) infinite rotate-hand-clock;
+  position: absolute;
+  top: calc(50% - 20vmin);
+}
+
+.stopwatch__second {
+  transform-origin: bottom;
+  background-color: #2c8000;
+  width: 1.5vmin;
+  height: 38vmin;
+  animation: 60s linear infinite rotate-hand-clock;
+  position: absolute;
+  top: calc(50% - 38vmin);
+}
+
+.stopwatch__center {
+  background-color: #f6a603;
+  border-radius: 50%;
+  width: 5vmin;
+  height: 5vmin;
+  position: absolute;
+}
+
+.stopwatch--speed-up-1 > :nth-child(2) {
+  animation-duration: 1s;
+}
+
+.stopwatch--speed-up-1 > :first-child {
+  animation-duration: 60s;
+}
+
+.stopwatch--speed-up-2 > :nth-child(2) {
+  animation-duration: 2s;
+}
+
+.stopwatch--speed-up-2 > :first-child {
+  animation-duration: 120s;
+}
+
+.stopwatch--speed-up-3 > :nth-child(2) {
+  animation-duration: 3s;
+}
+
+.stopwatch--speed-up-3 > :first-child {
+  animation-duration: 180s;
+}
+
+.stopwatch--speed-up-4 > :nth-child(2) {
+  animation-duration: 4s;
+}
+
+.stopwatch--speed-up-4 > :first-child {
+  animation-duration: 240s;
+}
+
+.stopwatch--speed-up-5 > :nth-child(2) {
+  animation-duration: 5s;
+}
+
+.stopwatch--speed-up-5 > :first-child {
+  animation-duration: 300s;
+}
+
+.stopwatch--speed-up-6 > :nth-child(2) {
+  animation-duration: 6s;
+}
+
+.stopwatch--speed-up-6 > :first-child {
+  animation-duration: 360s;
+}
+
+.stopwatch--speed-up-7 > :nth-child(2) {
+  animation-duration: 7s;
+}
+
+.stopwatch--speed-up-7 > :first-child {
+  animation-duration: 420s;
+}
+
+.stopwatch--speed-up-8 > :nth-child(2) {
+  animation-duration: 8s;
+}
+
+.stopwatch--speed-up-8 > :first-child {
+  animation-duration: 480s;
+}
+
+.stopwatch--speed-up-9 > :nth-child(2) {
+  animation-duration: 9s;
+}
+
+.stopwatch--speed-up-9 > :first-child {
+  animation-duration: 540s;
+}
+
+.stopwatch--speed-up-10 > :nth-child(2) {
+  animation-duration: 10s;
+}
+
+.stopwatch--speed-up-10 > :first-child {
+  animation-duration: 600s;
+}
+
+.stopwatch--speed-up-11 > :nth-child(2) {
+  animation-duration: 11s;
+}
+
+.stopwatch--speed-up-11 > :first-child {
+  animation-duration: 660s;
+}
+
+.stopwatch--speed-up-12 > :nth-child(2) {
+  animation-duration: 12s;
+}
+
+.stopwatch--speed-up-12 > :first-child {
+  animation-duration: 720s;
+}
+
+.stopwatch--speed-up-13 > :nth-child(2) {
+  animation-duration: 13s;
+}
+
+.stopwatch--speed-up-13 > :first-child {
+  animation-duration: 780s;
+}
+
+.stopwatch--speed-up-14 > :nth-child(2) {
+  animation-duration: 14s;
+}
+
+.stopwatch--speed-up-14 > :first-child {
+  animation-duration: 840s;
+}
+
+.stopwatch--speed-up-15 > :nth-child(2) {
+  animation-duration: 15s;
+}
+
+.stopwatch--speed-up-15 > :first-child {
+  animation-duration: 900s;
+}
+
+.stopwatch--speed-up-16 > :nth-child(2) {
+  animation-duration: 16s;
+}
+
+.stopwatch--speed-up-16 > :first-child {
+  animation-duration: 960s;
+}
+
+.stopwatch--speed-up-17 > :nth-child(2) {
+  animation-duration: 17s;
+}
+
+.stopwatch--speed-up-17 > :first-child {
+  animation-duration: 1020s;
+}
+
+.stopwatch--speed-up-18 > :nth-child(2) {
+  animation-duration: 18s;
+}
+
+.stopwatch--speed-up-18 > :first-child {
+  animation-duration: 1080s;
+}
+
+.stopwatch--speed-up-19 > :nth-child(2) {
+  animation-duration: 19s;
+}
+
+.stopwatch--speed-up-19 > :first-child {
+  animation-duration: 1140s;
+}
+
+.stopwatch--speed-up-20 > :nth-child(2) {
+  animation-duration: 20s;
+}
+
+.stopwatch--speed-up-20 > :first-child {
+  animation-duration: 1200s;
+}
+
+.stopwatch--speed-up-21 > :nth-child(2) {
+  animation-duration: 21s;
+}
+
+.stopwatch--speed-up-21 > :first-child {
+  animation-duration: 1260s;
+}
+
+.stopwatch--speed-up-22 > :nth-child(2) {
+  animation-duration: 22s;
+}
+
+.stopwatch--speed-up-22 > :first-child {
+  animation-duration: 1320s;
+}
+
+.stopwatch--speed-up-23 > :nth-child(2) {
+  animation-duration: 23s;
+}
+
+.stopwatch--speed-up-23 > :first-child {
+  animation-duration: 1380s;
+}
+
+.stopwatch--speed-up-24 > :nth-child(2) {
+  animation-duration: 24s;
+}
+
+.stopwatch--speed-up-24 > :first-child {
+  animation-duration: 1440s;
+}
+
+.stopwatch--speed-up-25 > :nth-child(2) {
+  animation-duration: 25s;
+}
+
+.stopwatch--speed-up-25 > :first-child {
+  animation-duration: 1500s;
+}
+
+.stopwatch--speed-up-26 > :nth-child(2) {
+  animation-duration: 26s;
+}
+
+.stopwatch--speed-up-26 > :first-child {
+  animation-duration: 1560s;
+}
+
+.stopwatch--speed-up-27 > :nth-child(2) {
+  animation-duration: 27s;
+}
+
+.stopwatch--speed-up-27 > :first-child {
+  animation-duration: 1620s;
+}
+
+.stopwatch--speed-up-28 > :nth-child(2) {
+  animation-duration: 28s;
+}
+
+.stopwatch--speed-up-28 > :first-child {
+  animation-duration: 1680s;
+}
+
+.stopwatch--speed-up-29 > :nth-child(2) {
+  animation-duration: 29s;
+}
+
+.stopwatch--speed-up-29 > :first-child {
+  animation-duration: 1740s;
+}
+
+.stopwatch--speed-up-30 > :nth-child(2) {
+  animation-duration: 30s;
+}
+
+.stopwatch--speed-up-30 > :first-child {
+  animation-duration: 1800s;
+}
+
+.stopwatch--speed-up-31 > :nth-child(2) {
+  animation-duration: 31s;
+}
+
+.stopwatch--speed-up-31 > :first-child {
+  animation-duration: 1860s;
+}
+
+.stopwatch--speed-up-32 > :nth-child(2) {
+  animation-duration: 32s;
+}
+
+.stopwatch--speed-up-32 > :first-child {
+  animation-duration: 1920s;
+}
+
+.stopwatch--speed-up-33 > :nth-child(2) {
+  animation-duration: 33s;
+}
+
+.stopwatch--speed-up-33 > :first-child {
+  animation-duration: 1980s;
+}
+
+.stopwatch--speed-up-34 > :nth-child(2) {
+  animation-duration: 34s;
+}
+
+.stopwatch--speed-up-34 > :first-child {
+  animation-duration: 2040s;
+}
+
+.stopwatch--speed-up-35 > :nth-child(2) {
+  animation-duration: 35s;
+}
+
+.stopwatch--speed-up-35 > :first-child {
+  animation-duration: 2100s;
+}
+
+.stopwatch--speed-up-36 > :nth-child(2) {
+  animation-duration: 36s;
+}
+
+.stopwatch--speed-up-36 > :first-child {
+  animation-duration: 2160s;
+}
+
+.stopwatch--speed-up-37 > :nth-child(2) {
+  animation-duration: 37s;
+}
+
+.stopwatch--speed-up-37 > :first-child {
+  animation-duration: 2220s;
+}
+
+.stopwatch--speed-up-38 > :nth-child(2) {
+  animation-duration: 38s;
+}
+
+.stopwatch--speed-up-38 > :first-child {
+  animation-duration: 2280s;
+}
+
+.stopwatch--speed-up-39 > :nth-child(2) {
+  animation-duration: 39s;
+}
+
+.stopwatch--speed-up-39 > :first-child {
+  animation-duration: 2340s;
+}
+
+.stopwatch--speed-up-40 > :nth-child(2) {
+  animation-duration: 40s;
+}
+
+.stopwatch--speed-up-40 > :first-child {
+  animation-duration: 2400s;
+}
+
+.stopwatch--speed-up-41 > :nth-child(2) {
+  animation-duration: 41s;
+}
+
+.stopwatch--speed-up-41 > :first-child {
+  animation-duration: 2460s;
+}
+
+.stopwatch--speed-up-42 > :nth-child(2) {
+  animation-duration: 42s;
+}
+
+.stopwatch--speed-up-42 > :first-child {
+  animation-duration: 2520s;
+}
+
+.stopwatch--speed-up-43 > :nth-child(2) {
+  animation-duration: 43s;
+}
+
+.stopwatch--speed-up-43 > :first-child {
+  animation-duration: 2580s;
+}
+
+.stopwatch--speed-up-44 > :nth-child(2) {
+  animation-duration: 44s;
+}
+
+.stopwatch--speed-up-44 > :first-child {
+  animation-duration: 2640s;
+}
+
+.stopwatch--speed-up-45 > :nth-child(2) {
+  animation-duration: 45s;
+}
+
+.stopwatch--speed-up-45 > :first-child {
+  animation-duration: 2700s;
+}
+
+.stopwatch--speed-up-46 > :nth-child(2) {
+  animation-duration: 46s;
+}
+
+.stopwatch--speed-up-46 > :first-child {
+  animation-duration: 2760s;
+}
+
+.stopwatch--speed-up-47 > :nth-child(2) {
+  animation-duration: 47s;
+}
+
+.stopwatch--speed-up-47 > :first-child {
+  animation-duration: 2820s;
+}
+
+.stopwatch--speed-up-48 > :nth-child(2) {
+  animation-duration: 48s;
+}
+
+.stopwatch--speed-up-48 > :first-child {
+  animation-duration: 2880s;
+}
+
+.stopwatch--speed-up-49 > :nth-child(2) {
+  animation-duration: 49s;
+}
+
+.stopwatch--speed-up-49 > :first-child {
+  animation-duration: 2940s;
+}
+
+.stopwatch--speed-up-50 > :nth-child(2) {
+  animation-duration: 50s;
+}
+
+.stopwatch--speed-up-50 > :first-child {
+  animation-duration: 3000s;
+}
+
+.stopwatch--speed-up-51 > :nth-child(2) {
+  animation-duration: 51s;
+}
+
+.stopwatch--speed-up-51 > :first-child {
+  animation-duration: 3060s;
+}
+
+.stopwatch--speed-up-52 > :nth-child(2) {
+  animation-duration: 52s;
+}
+
+.stopwatch--speed-up-52 > :first-child {
+  animation-duration: 3120s;
+}
+
+.stopwatch--speed-up-53 > :nth-child(2) {
+  animation-duration: 53s;
+}
+
+.stopwatch--speed-up-53 > :first-child {
+  animation-duration: 3180s;
+}
+
+.stopwatch--speed-up-54 > :nth-child(2) {
+  animation-duration: 54s;
+}
+
+.stopwatch--speed-up-54 > :first-child {
+  animation-duration: 3240s;
+}
+
+.stopwatch--speed-up-55 > :nth-child(2) {
+  animation-duration: 55s;
+}
+
+.stopwatch--speed-up-55 > :first-child {
+  animation-duration: 3300s;
+}
+
+.stopwatch--speed-up-56 > :nth-child(2) {
+  animation-duration: 56s;
+}
+
+.stopwatch--speed-up-56 > :first-child {
+  animation-duration: 3360s;
+}
+
+.stopwatch--speed-up-57 > :nth-child(2) {
+  animation-duration: 57s;
+}
+
+.stopwatch--speed-up-57 > :first-child {
+  animation-duration: 3420s;
+}
+
+.stopwatch--speed-up-58 > :nth-child(2) {
+  animation-duration: 58s;
+}
+
+.stopwatch--speed-up-58 > :first-child {
+  animation-duration: 3480s;
+}
+
+.stopwatch--speed-up-59 > :nth-child(2) {
+  animation-duration: 59s;
+}
+
+.stopwatch--speed-up-59 > :first-child {
+  animation-duration: 3540s;
+}
+
+.stopwatch--speed-up-60 > :nth-child(2) {
+  animation-duration: 60s;
+}
+
+.stopwatch--speed-up-60 > :first-child {
+  animation-duration: 3600s;
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+}
+/*# sourceMappingURL=index.e378193d.css.map */
